@@ -4,8 +4,8 @@ from typing import List
 
 class Store:
 
-    def __init__(self, products):
-        self.products = products
+    def __init__(self, all_products):
+        self.products = all_products
 
 
     def add_product(self, product):
