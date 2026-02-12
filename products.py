@@ -1,14 +1,8 @@
 class Product:
 
     def __init__(self, name, price, quantity):
-        if not name:
+        if not name or price < 0 or quantity < 0:
             raise ValueError("The name must be given!")
-
-        if price < 0:
-            raise ValueError("The price con not be a negative number!")
-
-        if quantity < 0:
-            raise ValueError("The Quantity can not be a negative number!")
 
         self.name = name
         self.price = price
